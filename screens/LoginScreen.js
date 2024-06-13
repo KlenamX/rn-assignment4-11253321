@@ -9,6 +9,7 @@ export default function LoginScreen() {
     <View style={styles.screen}>
       <Header />
       <Welcome />
+      <Login />
     </View>
   );
 }
