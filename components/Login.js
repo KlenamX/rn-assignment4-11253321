@@ -20,6 +20,7 @@ export default function Login() {
           placeholderTextColor="#95969D"
         />
       </View>
+      <Button />
     </View>
   );
 }
