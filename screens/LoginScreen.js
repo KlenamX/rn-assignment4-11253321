@@ -1,10 +1,19 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import React from "react";
+import Header from "../components/Header";
+import Welcome from "../components/Welcome";
+import Login from "../components/Login";
 
 export default function LoginScreen() {
   return (
-    <View>
-      <Text>LoginScreen</Text>
+    <View style={styles.screen}>
+      <Header />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  screen: {
+    paddingHorizontal: 30,
+  },
+});
