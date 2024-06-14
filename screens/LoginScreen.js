@@ -31,7 +31,9 @@ export default function LoginScreen() {
 
 const styles = StyleSheet.create({
   screen: {
+    flex: 1,
     paddingHorizontal: 30,
+    backgroundColor: "#ffffff",
   },
   continue: {
     flexDirection: "row",
