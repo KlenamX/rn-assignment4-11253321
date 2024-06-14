@@ -8,7 +8,7 @@ import Socials from "../components/Socials";
 export default function LoginScreen() {
   return (
     <View style={styles.screen}>
-      <Header />
+      <Header text="Jobizz" />
       <Welcome />
       <Login />
       <View style={styles.continue}>

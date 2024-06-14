@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <View style={styles.header}>
-      <Text style={styles.text}>Jobizz</Text>
+      <Text style={styles.text}>{props.text}</Text>
     </View>
   );
 }
