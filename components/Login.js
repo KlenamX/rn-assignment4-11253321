@@ -1,13 +1,35 @@
-import { View, Text, StyleSheet, TextInput } from "react-native";
-import React from "react";
-import Button from "./Button";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  Alert,
+} from "react-native";
+import React, { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Login() {
+  const navigation = useNavigation();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleLogin = () => {
+    if (name.trim() === "" || email.trim() === "") {
+      Alert.alert("Error", "Please enter name and email.");
+    } else {
+      navigation.navigate("Home", { name, email });
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.name}>
         <TextInput
           style={styles.textInput}
+          onChangeText={setName}
+          value={name}
           placeholder="Name"
           placeholderTextColor="#95969D"
         />
@@ -16,11 +38,15 @@ export default function Login() {
       <View>
         <TextInput
           style={styles.textInput}
+          onChangeText={setEmail}
+          value={email}
           placeholder="Email"
           placeholderTextColor="#95969D"
         />
       </View>
-      <Button />
+      <TouchableOpacity onPress={handleLogin} style={styles.loginContainter}>
+        <Text style={styles.text}>Log In</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -41,5 +67,20 @@ const styles = StyleSheet.create({
   },
   name: {
     marginBottom: 20,
+  },
+
+  loginContainter: {
+    backgroundColor: "#356899",
+    marginTop: 35,
+    height: 56,
+    width: "100%",
+    borderRadius: 5,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "500",
   },
 });
