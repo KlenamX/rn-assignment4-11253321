@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, StyleSheet, Image } from "react-native";
 import React from "react";
 import Search from "../components/Search";
+import FeaturedJobs from "../components/FeaturedJobs";
 
 export default function HomeScreen({ route }) {
   const { name, email } = route.params;
@@ -20,6 +21,7 @@ export default function HomeScreen({ route }) {
         </View>
       </View>
       <Search />
+      <FeaturedJobs />
     </SafeAreaView>
   );
 }
@@ -27,13 +29,14 @@ export default function HomeScreen({ route }) {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    paddingHorizontal: 30,
+    // paddingHorizontal: 30,
     backgroundColor: "#ffffff",
   },
   headerContainer: {
     justifyContent: "space-between",
     flexDirection: "row",
     marginTop: 80,
+    paddingHorizontal: 25,
   },
   header: {},
   text1: {

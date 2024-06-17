@@ -30,6 +30,8 @@ export default function Search() {
 
 const styles = StyleSheet.create({
   searchConatiner: {
+    paddingHorizontal: 25,
+
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
