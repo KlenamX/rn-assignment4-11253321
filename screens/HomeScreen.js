@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, StyleSheet, Image } from "react-native";
 import React from "react";
 import Search from "../components/Search";
 import FeaturedJobs from "../components/FeaturedJobs";
+import PopularJobs from "../components/PopularJobs";
 
 export default function HomeScreen({ route }) {
   const { name, email } = route.params;
@@ -18,10 +19,14 @@ export default function HomeScreen({ route }) {
             style={styles.image}
             source={require("../assets/profile.jpeg")}
           />
+          <View style={styles.activity}>
+            <View style={styles.activity2}></View>
+          </View>
         </View>
       </View>
       <Search />
       <FeaturedJobs />
+      <PopularJobs />
     </SafeAreaView>
   );
 }
@@ -30,7 +35,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     // paddingHorizontal: 30,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#FAFAFD",
   },
   headerContainer: {
     justifyContent: "space-between",
@@ -53,5 +58,21 @@ const styles = StyleSheet.create({
     height: 54,
     width: 54,
     borderRadius: 27,
+  },
+  activity: {
+    borderRadius: "100%",
+    position: "absolute",
+    right: 0,
+    height: 16,
+    width: 16,
+    backgroundColor: "#FAFAFD",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  activity2: {
+    borderRadius: "100%",
+    height: 8,
+    width: 8,
+    backgroundColor: "#FC1010",
   },
 });

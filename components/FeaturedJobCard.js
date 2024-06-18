@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
 export default function FeaturedJobCard({
@@ -10,7 +10,7 @@ export default function FeaturedJobCard({
   backgroundColor,
 }) {
   return (
-    <View style={[styles.box, { backgroundColor }]}>
+    <TouchableOpacity style={[styles.box, { backgroundColor }]}>
       <View style={styles.overlayContainer}>
         <Image
           source={require("../assets/background2.png")}
@@ -31,7 +31,7 @@ export default function FeaturedJobCard({
         <Text style={styles.salary}>{salary}</Text>
         <Text style={styles.location}>{location}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   overlayContainer: {
     ...StyleSheet.absoluteFillObject,
-    opacity: 0.2,
+    opacity: 0.25,
     width: 280,
     height: 186,
     justifyContent: "center",

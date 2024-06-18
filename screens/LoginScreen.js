@@ -38,9 +38,11 @@ const styles = StyleSheet.create({
   continue: {
     flexDirection: "row",
     marginTop: 80,
+    justifyContent: "center",
     alignItems: "center",
   },
   left: {
+    backgroundColor: "#95969D",
     height: 0.2,
     borderWidth: 0.2,
     borderColor: "#95969D",
@@ -52,6 +54,7 @@ const styles = StyleSheet.create({
   },
 
   right: {
+    backgroundColor: "#95969D",
     height: 0.2,
     borderWidth: 0.2,
     borderColor: "#95969D",
