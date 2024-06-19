@@ -44,7 +44,7 @@ const jobsData = [
   {
     id: "5",
     image: require("../assets/twitter.png"),
-    title: "Sales Manager:",
+    title: "Sales Manager",
     company: "Twitter",
     salary: "$180,000/y",
     location: "Los Angeles, US",
@@ -115,7 +115,6 @@ const styles = StyleSheet.create({
   popular: {
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingRight: 30,
     marginBottom: 10,
   },
   text: {
