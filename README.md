@@ -4,6 +4,14 @@
 
 ![](./assets/screenshots/code.png)
 
+#
+
+## Final (i was unable to resubmit this)
+
+### I made changes to the background pattern of each card in featured jobs.
+
+<img src="assets\screenshots\updated.jpg" width="" height="450">
+
 # COMPONENTS USAGE
 
 ## LoginScreen
