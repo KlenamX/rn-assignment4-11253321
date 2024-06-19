@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     borderRadius: 27,
   },
   activity: {
-    borderRadius: "100%",
+    borderRadius: 100,
     position: "absolute",
     right: 0,
     height: 16,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   activity2: {
-    borderRadius: "100%",
+    borderRadius: 100,
     height: 8,
     width: 8,
     backgroundColor: "#FC1010",

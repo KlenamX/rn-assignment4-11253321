@@ -108,6 +108,7 @@ export default function PopularJobs() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginBottom: 20,
     marginTop: 50,
     paddingHorizontal: 25,
   },
