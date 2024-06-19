@@ -13,7 +13,7 @@ export default function FeaturedJobCard({
     <TouchableOpacity style={[styles.box, { backgroundColor }]}>
       <View style={styles.overlayContainer}>
         <Image
-          source={require("../assets/background2.png")}
+          source={require("../assets/Group.png")}
           resizeMode="contain"
           style={styles.overlay}
         />
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   overlayContainer: {
     ...StyleSheet.absoluteFillObject,
-    opacity: 0.25,
+    opacity: 0.15,
     width: 280,
     height: 186,
     justifyContent: "center",
